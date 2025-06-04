@@ -46,6 +46,8 @@
                     <li class=""><a href="#feature">About</a></li>
                     <li class=""><a href="#info">Parthners</a></li>
                     <li class=""><a href="#blog">Team</a></li>
+                    <li class=""><a href="#" onclick="changeLanguage('es')" class="lang-btn">ES</a></li>
+                    <li class=""><a href="#" onclick="changeLanguage('en')" class="lang-btn">EN</a></li>
                   </ul>
                 </div>
               </div>
@@ -56,10 +58,10 @@
               <div class="row">
                 <div class="banner-info text-center wow fadeIn delay-05s">
                   <h1 class="bnr-title"><span></span></h1>
-                  <h2 class="bnr-sub-title">
+                  <h2 class="bnr-sub-title" id="encuentra">
                     Encuentra tu prenda al instante con LockItem
                   </h2>
-                  <p class="bnr-para">
+                  <p class="bnr-para" id="calidad">
                     Calidad y ahorro se unen en una sola experiencia
                   </p>
                   <div class="brn-btn">
@@ -67,9 +69,9 @@
                     <a
                       href="https://astonishing-dasik-2b2d1c.netlify.app/login"
                       class="btn btn-download"
-                      >Registrate!</a
+                      id="registrate">Registrate!</a
                     >
-                    <a href="#info" class="btn btn-more">Leer más</a>
+                    <a href="#info" class="btn btn-more" id="leermas">Leer más</a>
                   </div>
                   <div class="overlay-detail">
                     <a href="#feature"><i class="fa fa-angle-down"></i></a>
@@ -92,8 +94,8 @@
                 <div class="item-img">
                   <img src="img/ser01.png" width="64" height="64" />
                 </div>
-                <h3 class="pad-bt15">Catálogo variado</h3>
-                <p>
+                <h3 class="pad-bt15" id="about1">Catálogo variado</h3>
+                <p id="about2">
                   LockItem cuenta con un catálogo de diferentes tiendas
                   reconocidas
                 </p>
@@ -106,8 +108,8 @@
                 <div class="item-img">
                   <img src="img/ser02.png" width="64" height="64" />
                 </div>
-                <h3 class="pad-bt15">Tu prenda deseada</h3>
-                <p>
+                <h3 class="pad-bt15" id="about3">Tu prenda deseada</h3>
+                <p id="about4">
                   Elige la prenda que deseas y te la localizaremos en tiempo
                   real
                 </p>
@@ -122,7 +124,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h2 class="service-title pad-bt15">
+              <h2 class="service-title pad-bt15" id="info1">
                 Nuestra red de tiendas afiliadas
               </h2>
               <hr class="bottom-line" />
@@ -138,8 +140,8 @@
                   height="966"
                 />
                 <figcaption>
-                  <h3 class="store-name">Clotheing</h3>
-                  <p>Marca de ropa urbana que distingue moda juvenil</p>
+                  <h3 class="store-name" id="info2">Clotheing</h3>
+                  <p id="info3">Marca de ropa urbana que distingue moda juvenil</p>
                 </figcaption>
               </figure>
             </div>
@@ -154,8 +156,8 @@
                   height="966"
                 />
                 <figcaption>
-                  <h3 class="store-name">Tonotos</h3>
-                  <p>
+                  <h3 class="store-name" id="info4">Tonotos</h3>
+                  <p id="info5">
                     Tienda de ropa para tonotos que ofrece prendas de moda
                     tonotas
                   </p>
@@ -173,8 +175,8 @@
                   height="966"
                 />
                 <figcaption>
-                  <h3 class="store-name">Womens</h3>
-                  <p>
+                  <h3 class="store-name" id="info6">Womens</h3>
+                  <p id="info7">
                     Marca peruana de moda que se enfoca en la venta de ropa
                     femenina de alta calidad
                   </p>
@@ -192,8 +194,8 @@
                   height="966"
                 />
                 <figcaption>
-                  <h3 class="store-name">AR</h3>
-                  <p>
+                  <h3 class="store-name" id="info8">AR</h3>
+                  <p id="info9">
                     Tienda por departamentos peruana que ofrece productos de
                     moda.
                   </p>
@@ -211,8 +213,8 @@
                   height="966"
                 />
                 <figcaption>
-                  <h3 class="store-name">Co_sthing</h3>
-                  <p>
+                  <h3 class="store-name" id="info10">Co_sthing</h3>
+                  <p id="info11" >
                     Multinacional sueca de moda que ofrece ropa y accesorios de
                     tendencia para hombres, mujeres y niños a precios
                     competitivos
@@ -231,8 +233,8 @@
                   height="966"
                 />
                 <figcaption>
-                  <h3 class="store-name">Fine</h3>
-                  <p>
+                  <h3 class="store-name" id="info12">Fine</h3>
+                  <p id="info13">
                     Empresa peruana de retail que vende productos de moda,
                     electrodomésticos y hogar, con un enfoque en brindar precios
                     accesibles
@@ -249,8 +251,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h2 class="service-title pad-bt15">OUR TEAM</h2>
-              <p class="sub-title pad-bt15">
+              <h2 class="service-title pad-bt15" id="equipo1">OUR TEAM</h2>
+              <p class="sub-title pad-bt15" id="equipo2">
                 El equipo de desarrolladores de la StarUp.
               </p>
               <hr class="bottom-line" />
@@ -282,8 +284,8 @@
                       >
                     </p>
                   </div>
-                  <p>
-                    <br />Me gustan los videojuegos y las series, quiero
+                  <p id="equipo3" class="team-desc">
+                  Me gustan los videojuegos y las series, quiero
                     especializarme en ciberseguridad para tener una ganancia
                     estable mientras creo videojuegos aparte por pasión.
                   </p>
@@ -317,8 +319,8 @@
                       >
                     </p>
                   </div>
-                  <p>
-                    <br />Soy estudiante de la carrera de ingeniería de Software
+                  <p id="equipo4" class="team-desc">
+                  Soy estudiante de la carrera de ingeniería de Software
                     en la universidad Peruana de Ciencias Aplicadas, elegí esta
                     carrera por mi pasión por la programación e interés por la
                     tecnología.
@@ -353,8 +355,8 @@
                       >
                     </p>
                   </div>
-                  <p>
-                    <br />Me gusta dibujar, tocar guitarra y jugar videojuegos.
+                  <p id="equipo5" class="team-desc">
+                  Me gusta dibujar, tocar guitarra y jugar videojuegos.
                     Tengo conocimiento en el desarrollo frontend con lenguajes
                     como angular y vue.js, así como desarrollo móvil con
                     flutter.
@@ -389,8 +391,8 @@
                       >
                     </p>
                   </div>
-                  <p>
-                    <br />Estudiante de la carrera de ingeniería de Software en
+                  <p id="equipo6" class="team-desc">
+                  Estudiante de la carrera de ingeniería de Software en
                     la UPC, me apasiona la tecnología, y me encanta programar en
                     Angular.
                   </p>
@@ -424,8 +426,8 @@
                       >
                     </p>
                   </div>
-                  <p>
-                    <br />Me gusta leer manga, salir a comer a nuevos lugares,
+                  <p id="equipo7" class="team-desc">
+                  Me gusta leer manga, salir a comer a nuevos lugares,
                     los videojuegos y la música. Tengo conocimiento en el
                     desarrollo frontend con Angular y backend con Node.js.
                   </p>
@@ -459,8 +461,8 @@
                       >
                     </p>
                   </div>
-                  <p>
-                    <br />Me considero un estudiante comprometido con el trabajo
+                  <p id="equipo8" class="team-desc">
+                  Me considero un estudiante comprometido con el trabajo
                     y desenvolvimiento en el campo profesional, con mucho foco
                     para cada uno de los proyectos en los cuales participo y
                     detallista con los temas a arreglar.
@@ -479,15 +481,15 @@
           <div class="footer-info">
             <div class="footer-item">
               <span class="icon">📍</span>
-              <span>Ubicación</span>
+              <span id="footer1">Ubicación</span>
             </div>
             <div class="footer-item">
               <span class="icon">✉️</span>
-              <span>Correo</span>
+              <span id="footer2">Correo</span>
             </div>
             <div class="footer-item">
               <span class="icon">📞</span>
-              <span>Teléfono</span>
+              <span id="footer3">Teléfono</span>
             </div>
           </div>
           <div class="footer-form">
@@ -497,12 +499,12 @@
             </div>
             <input type="text" placeholder="Asunto" />
             <textarea placeholder="Mensaje"></textarea>
-            <button type="submit">ENVIAR AHORA</button>
+            <button type="submit" id="footer4">ENVIAR AHORA</button>
           </div>
         </div>
         <div class="container">
           <div class="row text-center">
-            <p>&copy; Lock Item, todos los derechos reservados.</p>
+            <p id="footer5">&copy; Lock Item, todos los derechos reservados.</p>
             <div class="credits">Designed by <a>LockItem</a></div>
           </div>
         </div>
@@ -515,5 +517,89 @@
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
+    <script>
+  const translations = {
+    es: {
+      encuentra: "Encuentra tu prenda al instante con LockItem",
+      calidad: "Calidad y ahorro se unen en una sola experiencia",
+      registrate: "Registrate!",
+      leermas: "Leer más",
+      about1: "Catálogo variado",
+      about2: "LockItem cuenta con un catálogo de diferentes tiendas reconocidas",
+      about3: "Tu prenda deseada",
+      about4: "Elige la prenda que deseas y te la localizaremos en tiempo real",
+      info1: "Nuestra red de tiendas afiliadas",
+      info2: "Clotheing",
+      info3: "Marca de ropa urbana que distingue moda juvenil",
+      info4: "Tonotos",
+      info5: "Tienda de ropa para tonotos que ofrece prendas de moda tonotas",
+      info6: "Womens",
+      info7: "Marca peruana de moda que se enfoca en la venta de ropa femenina de alta calidad",
+      info8: "AR",
+      info9: "Tienda por departamentos peruana que ofrece productos de moda.",
+      info10: "Co_sthing",
+      info11: "Multinacional sueca de moda que ofrece ropa y accesorios de tendencia para hombres, mujeres y niños a precios competitivos",
+      info12: "Fine",
+      info13: "Empresa peruana de retail que vende productos de moda, electrodomésticos y hogar, con un enfoque en brindar precios accesibles",
+      equipo2: "El equipo de desarrolladores de la StarUp.",
+      equipo3: "Me gustan los videojuegos y las series, quiero especializarme en ciberseguridad para tener una ganancia estable mientras creo videojuegos aparte por pasión.",
+      equipo4: "Soy estudiante de la carrera de ingeniería de Software en la universidad Peruana de Ciencias Aplicadas, elegí esta carrera por mi pasión por la programación e interés por la tecnología.",
+      equipo5: "Me gusta dibujar, tocar guitarra y jugar videojuegos. Tengo conocimiento en el desarrollo frontend con lenguajes como angular y vue.js, así como desarrollo móvil con flutter.",
+      equipo6: "Estudiante de la carrera de ingeniería de Software en la UPC, me apasiona la tecnología, y me encanta programar en Angular.",
+      equipo7: "Me gusta leer manga, salir a comer a nuevos lugares, los videojuegos y la música. Tengo conocimiento en el desarrollo frontend con Angular y backend con Node.js.",
+      equipo8: "Me considero un estudiante comprometido con el trabajo y desenvolvimiento en el campo profesional, con mucho foco para cada uno de los proyectos en los cuales participo y detallista con los temas a arreglar.",
+      footer1: "Ubicación",
+      footer2: "Correo",
+      footer3: "Teléfono",
+      footer4: "ENVIAR AHORA",
+      footer5: "Lock Item, todos los derechos reservados."
+    },
+    en: {
+      encuentra: "Find your garment instantly with LockItem",
+      calidad: "Quality and savings combined in a single experience",
+      registrate: "Sign up!",
+      leermas: "Read more",
+      about1: "Diverse Catalog",
+      about2: "LockItem features a catalog from various well-known stores",
+      about3: "Your desired garment",
+      about4: "Choose the garment you want and we'll locate it in real time",
+      info1: "Our network of affiliated stores",
+      info2: "Clotheing",
+      info3: "Urban clothing brand that stands out for youthful fashion",
+      info4: "Tonotos",
+      info5: "Clothing store for tonotos offering trendy tonota fashion",
+      info6: "Womens",
+      info7: "Peruvian fashion brand focused on high-quality women's clothing",
+      info8: "AR",
+      info9: "Peruvian department store offering fashion products",
+      info10: "Co_sthing",
+      info11: "Swedish multinational offering trendy clothes and accessories for men, women, and children at competitive prices",
+      info12: "Fine",
+      info13: "Peruvian retail company selling fashion, appliances, and home products, focused on providing affordable prices",
+      equipo2: "The development team of the startup.",
+      equipo3: "I like video games and series, I want to specialize in cybersecurity to have a stable income while creating games as a passion project.",
+      equipo4: "I am a Software Engineering student at the Peruvian University of Applied Sciences. I chose this career because of my passion for programming and interest in technology.",
+      equipo5: "I like drawing, playing guitar, and video games. I have knowledge in frontend development with Angular and Vue.js, as well as mobile development with Flutter.",
+      equipo6: "Software Engineering student at UPC. I'm passionate about technology and love programming in Angular.",
+      equipo7: "I like reading manga, eating out at new places, video games, and music. I have knowledge in frontend development with Angular and backend with Node.js.",
+      equipo8: "I consider myself a student committed to work and professional development, highly focused on each project I take part in and detail-oriented when it comes to fixing issues.",
+      footer1: "Location",
+      footer2: "Email",
+      footer3: "Phone",
+      footer4: "SEND NOW",
+  footer5: "Lock Item, all rights reserved."
+    }
+  };
+
+  function changeLanguage(lang) {
+    const keys = Object.keys(translations[lang]);
+    keys.forEach(id => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.innerText = translations[lang][id];
+      }
+    });
+  }
+</script>
   </body>
 </html>

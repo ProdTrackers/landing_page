@@ -143,6 +143,34 @@ HEADER
     -webkit-transition: color 0.2s ease-out;
     transition: color 0.2s ease-out;
 }
+/* Estilo visual de los botones de idioma */
+.navbar-nav > li > a.lang-btn {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin-left: 5px;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  line-height: 20px;
+  margin-top: 16px;
+}
+
+/* Hover para efecto botón */
+.navbar-nav > li > a.lang-btn:hover {
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Si quieres destacar el idioma activo */
+.navbar-nav > li > a.lang-btn.active-lang {
+  background-color: #fff;
+  color: #333;
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     color: #69a1a5;
     background-color: transparent;
@@ -151,6 +179,7 @@ HEADER
     background-color: transparent;
     color: #69a1a5;
 }
+
 .banner-info
 {
     padding-top: 140px;
@@ -218,6 +247,27 @@ h2.bnr-sub-title
    bottom: 25px;
    font-size: 38px;
    color: #fff;
+}
+.lang-switch {
+  display: flex;
+  gap: 5px;
+  margin-left: 15px;
+}
+
+.lang-switch button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.lang-switch button:hover {
+  background-color: #fff;
+  color: #333;
 }
 /***********************************
 ************************************
@@ -560,6 +610,24 @@ Blog
     -ms-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
+}
+.blog-sec {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-desc {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  min-height: 120px; /* Ajusta si necesitas más espacio */
 }
 /***********************************
 ************************************
