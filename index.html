@@ -497,7 +497,7 @@
               <input id="nombre" type="text" placeholder="Nombre" />
               <input id="correo" type="email" placeholder="Correo"/>
             </div>
-            <input  id="asunto" type="text" placeholder="Asunto"/>
+            <input id="asunto" type="text" placeholder="Asunto"/>
             <textarea id="mensaje" placeholder="Mensaje"></textarea>
             <button type="submit" id="footer4">ENVIAR AHORA</button>
           </div>
@@ -554,9 +554,6 @@
       footer3: "Teléfono",
       footer4: "ENVIAR AHORA",
       footer5: "Lock Item, todos los derechos reservados.",
-      nombre: "Nombre",
-      correo: "Correo",
-      asunto: "Asunto",
       mensaje: "Mensaje"
     },
     en: {
@@ -594,22 +591,33 @@
       footer3: "Phone",
       footer4: "SEND NOW",
       footer5: "Lock Item, all rights reserved.",
-      nombre: "Name",
-      correo: "Email",
-      asunto: "Affair",
       mensaje: "Message"
     }
   };
 
-  function changeLanguage(lang) {
-    const keys = Object.keys(translations[lang]);
-    keys.forEach(id => {
-      const element = document.getElementById(id);
-      if (element) {
-        element.innerText = translations[lang][id];
-      }
-    });
-  }
+function changeLanguage(lang) {
+  const keys = Object.keys(translations[lang]);
+  keys.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.innerText = translations[lang][id];
+    }
+  });
+
+  // Actualizar placeholders de inputs
+  const placeholders = {
+    nombre: { es: "Nombre", en: "Name" },
+    correo: { es: "Correo", en: "Email" },
+    asunto: { es: "Asunto", en: "Subject" }
+  };
+
+  Object.keys(placeholders).forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.setAttribute("placeholder", placeholders[id][lang]);
+    }
+  });
+}
 </script>
   </body>
 </html>
